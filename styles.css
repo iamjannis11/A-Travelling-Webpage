@@ -1,0 +1,222 @@
+:root {
+    --main-green: rgb(59, 238, 136);
+    --second-green: rgb(49, 107, 49);
+    --main-red: rgb(255, 72, 0);
+    --main-orange: rgb(255, 178, 34);
+    --main-footer: rgb(54, 54, 129);
+}
+
+* {
+   padding: 0;
+   margin: 0;
+   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+   box-sizing: border-box;
+}
+
+.hero {
+    height: 100vh;
+    width: 100%;
+    background-image: url('https://img.freepik.com/free-photo/summer-beautiful-girl-holding-mountain-view-camera_1150-20567.jpg?size=626&ext=jpg&ga=GA1.2.1135456282.1653725213');
+    background-position: center;
+    background-size: cover;
+}
+
+.logo {
+    font-size: 35px;
+}
+
+span {
+    color: var(--main-green);
+    letter-spacing: 1px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 45px;
+    padding-left: 8%;
+    padding-right: 8%;
+}
+
+nav ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 10px 25px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #000;
+    font-size: 1.6em;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    color: var(--main-red);
+    transition: 0.3s;
+}
+
+.content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    color: white;
+    transform: translate(-50%, -50%);
+    margin-right: -50%;
+}
+
+h1 {
+    margin: 20px 0px 20px;
+    font-size: 60px;
+    text-align: center;
+}
+
+h2 {
+    font-size: 40px;
+    text-align: center;
+}
+
+.btn input {
+    border: unset;
+    border-radius: 30px;
+    padding: 5px 20px;
+    background-color: var(--main-green);
+    font-size: 1.2em;
+    outline: none;
+    box-shadow: 0px 0px 5px #000;
+    position: absolute;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.btn-main {
+    display: flex;
+    justify-content: center;
+}
+
+.btn input:hover {
+    background-color: var(--second-green);
+    transition: 0.5s;
+}
+
+.events {
+    background-color: bisque;
+    padding-top: 30px;
+}
+
+.event1, .event2 {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+    padding: 40px 0;
+}
+
+.event1, .event2, .btn-second {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.image-title, .image-text {
+    text-align: center;
+    max-width: 700px;
+}
+
+.image-title {
+    margin: 20px auto;
+    font-size: 30px;
+}
+
+.image-text {
+    font-size: 20px;;
+}
+
+.challenges {
+    height: 100vh;
+    width: 100%;
+    background-image: url('https://media.istockphoto.com/photos/female-hiker-relaxes-on-grassy-mountain-ridge-at-sunrise-picture-id1361595939?k=20&m=1361595939&s=612x612&w=0&h=kHcH5bvoCB-TnFGFzf5BXf6NP_Tk_aOoNwopGx5CXBQ=');
+    background-position: center;
+    background-size: cover;
+}
+
+.chal { 
+    padding-top: 8%;
+    margin-left: 8%;
+    margin-right: 8%;
+}
+
+.chal-title {
+    text-transform: uppercase;
+    font-size: 7vmin;
+    padding-bottom: 30px;
+    color: var(--main-orange);
+    
+}
+.chal-subtitle {
+    font-size: 1.6em;
+    padding-bottom: 30px;
+}
+
+.btn-second {
+    margin: 20px auto;
+}
+
+.upcoming {
+    padding: 10% 0;
+}
+
+.upmg {
+    font-size: 6vmin;
+    padding-bottom: 30px;
+}
+
+.row {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.row .col {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#content-col {
+    width: 40%;
+}
+
+.image-col {
+    width: 60%;
+}
+
+.upcoming .image-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    align-items: center;
+}
+
+.image-gallery img {
+    max-width: 300px;
+    margin: 10px;
+    margin-top: 30px;
+}
+
+footer {
+    background-color: var(--main-footer);
+    color: white;
+    text-align: center;
+    padding: 5%;
+    margin: 0;
+    width: 100%;
+}
+
+#black {
+    color: #000;
+    padding-top: 10px;
+}
